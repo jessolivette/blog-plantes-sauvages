@@ -42,6 +42,10 @@ i {
 	border: none;
 	padding: 10px;
 }
+
+#fT {
+
+}
     
 .danger {
 	color: red;
@@ -54,5 +58,9 @@ i {
 
 ul {
     list-style-type : circle ;
+}
+
+ul>li:hover {
+	background-color: rgb(192, 249, 84);
 }
 
