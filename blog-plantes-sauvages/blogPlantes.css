@@ -29,14 +29,6 @@ i {
     }
 
 #section {
-	margin: 10px;
-	border: 1px groove #000;
-	border-radius: 5px;
-	padding: 10px;
-	background-color: #FDEFF8;
-}
-
-#presentation {
 	background-color: #ffffff99;
 	margin: 30px;
 	border: none;
