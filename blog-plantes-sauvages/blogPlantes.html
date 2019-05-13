@@ -1,33 +1,36 @@
+
 <!DOCTYPE html>
 
 <html lang="fr">
     <head>
         <meta charset="utf-8">
         <title> blog plantes comestibles et médicinales </title>
+        <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Montez|Tangerine" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="blogPlantes.css"/>
     </head>
 
-    <body>
-    	
+    <body onload="render()">
+        
         <!--section 1 titre-->
 
             <h1><strong> Plantes sauvages comestibles et médicinales </strong></h1>
-    	    <hr align="center" width="80%"/>
+            <hr align="center" width="80%"/>
 
-    	<!--section 2  présentation-->
-    	
+        <!--section 2  présentation-->
+        
         <article id="section">
             <p> Mon premier blog, que je vais consacrer à réunir quelques connaissances personnelles sur les <b>plantes</b> ... Sauvages comestibles, médicinales, aromatiques de toutes branches, je vais classer ici un maximum de renseignements et de liens utiles pour faciliter la reconnaissance et l'utilisation des plantes que l'on rencontre dans notre beau département de l'Aude. <br/> Et comme il est difficile de parler du monde végétal sans inclure les arbres, je joindrais quelques clés pour aider à la reconnaissances des principales espèces de notre territoire.</p>
         </article>
 
-    	<!-- section 3 avertissement et liens pour faciliter la détermination -->
-    	
+        <!-- section 3 avertissement et liens pour faciliter la détermination -->
+        
         <article id="section">
             <!-- avertissement -->
-            <h3><b>Avant de commencer ...</b></h3>
+            <h4><b>Avant de commencer ...</b></h4>
             <p><strong><span class="danger">Attention</span> gardez toujours à l'esprit que les plantes, comme les champignons, peuvent être extrèmement toxiques. Il est donc indispensable d'être absolument certain de l'identification exacte de l'espèce avant toute consommation.</strong></p>
-            <!-- liens utiles -->
-    		<div>
+            <!-- useful links -->
+            <div>
                 <p><em>Pour vous aider, voici quelques liens utiles à utiliser sans modération :</em></p>
                 <ul>
                     <li><a href="https://www.tela-botanica.org" target="_blank"> tela botanica </a></li>
@@ -38,68 +41,17 @@
         </article>
 
         <!-- section 4 liste des plantes actuellement référencées dans le blog -->
-
+        
         <article id="section" class="flex-container">
             <div class="list">
-                <h3>les plantes sauvages :</h3>
+                <h4>les plantes sauvages :</h4>
                 <p>cliquez sur le nom de la plante pour afficher sa fiche technique.</p>
-                <ul>
-                    <li id="achillee">Achillée millefeuille <i>(Achillea millefolium)</i></li>
-                    <li id="ail">Ail des ours <i>(Allium ursinum)</i></li>
-                    <li id="bourrache">Bourrache <i>(Borago officinalis)</i></li>
-                    <li id="camomille">Camomille matricaire <i>(Matricaria chamomilla)</i></li>
-                    <li id="chanopode">Chenopode blanc <i>(Chenopodium album)</i></li>
-                    <li id="consoude">Consoude <i>(Symphytum)</i></li>
-                    <li id="coquelicot">Coquelicot <i>(Papaver rhoeas)</i></li>
-                    <li id="fumeterre">Fumeterre officinale <i>(Fumaria officinalis)</i></li>
-                    <li id="hysope">Hysope <i>(Hyssopus officinalis)</i></li>
-                    <li id="laiteron">Laiteron rude et des champs <i>(Sonchus asper et arvensis)</i></li>
-                    <li id="lamier">Lamier pourpre <i>(Lamium purpureum)</i></li>
-                    <li id="mauve">Mauve sylvestre<i>(Malvia sylvestris)</i></li>
-                    <li id="millepertuis">Millepertuis <i>(Hypericum perforatum)</i></li>
-                    <li id="pissenlit">Pissenlit <i>(Taraxacum officinale)</i></li>
-                    <li id="plantin">Plantin grand et lancéolé <i>(Plantago major et lanceolata)</i></li>
-                    <li id="poireaux">Poireaux des vignes <i>(Allium polyanthum)</i></li>
-                    <li id="pourpier">Pourpier maraîcher <i>(Portulaca oleracea)</i></li>
-                    <li id="roquette">Roquette sauvage jaune et blanche <i>(Diplotaxis tenuifolia et erucoides)</i></li>
-                    <li id="ronce">Ronce <i>(Rubus fruticosus)</i></li>
-                    <li id="souci">Souci des champs <i>(Calendula officinalis)</i></li>
-                    <li id="trefle">Trèfle des prés <i>(Trifolium pratense)</i></li>
+                <ul id="plantList">
+                <!-- render li elements in js file -->
                 </ul>
             </div>
-            <div id="fT">
-                <h3>Fiche descriptive</h3>
-                <p id="name"> Nom de la plante. </p>
-                <p id="description"> Propriétés, vertues. </p>
-                <p id="shape"> présentation thérapeutique. </p>
-            </div>
-        </article>
-
-<!--
-                
-                    <td>Millepertuis perforé (hypericum perforatum)</td>
-                    <td>Dépression légère, stress intense; brulures, coups de soleil, douleurs articulaires</td>
-                    <td>Extrait sec (poudre de plante), huile rouge. <b class="danger">Attention !</b> le millepertuis interragit avec de nombreux medicaments.</td>
-                
-                
-                    <td>Coquelicot (papaver rhoeas)</td>
-                    <td>Troubles du sommeil, agitation, maux de gorge, toux sèche</td>
-                    <td>Tisane, sirop, macerats de pétales, consomation des graines<b class="danger">Attention</b> seul le sirop est adapté pour les enfants de moins de 6ans.</td>
-                
-                
-                    <td>Plantin (plantago major et lanceolata)</td>
-                    <td>Purificateur du sang, des poumons, de l'estomac. Traite l'hémophilie, les bronchites chroniques, la diarrhée etc ...</td>
-                    <td>Les jeunes feuilles se mangent en salade, infusions, consomation des graines.</td>
-                
-                
-                    <td>Sauge officinale (salvia officinalis)</td>
-                    <td>Digestive, régule la transpiration, l'hypotention, la fièvre et les cycles menstruels, maux de gorge, pharyngites, aphtes, gingivites,désinfection des plaies</td>
-                    <td>Gargarismes, tisanes. Application cutanée (désinfection des plaies, aphtes)</td>
-                
-                
             <p>Plus d'informations sur les vertus des plantes : <a href="https://www.altheaprovence.com" target="_blank"> Altheaprovence </a></p>
         </article>
-        -->
-        <script src="blogPlantes.js" type="text/javascript"></script>
+    <script type="text/javascript" src="blogPlantes.js"></script>
     </body>
 </html>

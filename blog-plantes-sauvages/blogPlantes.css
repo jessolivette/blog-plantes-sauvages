@@ -1,58 +1,67 @@
+
 body {
-	background-image: url("https://images.freeimages.com/images/large-previews/37b/after-the-rain-1379585.jpg");
+    background-image: url("https://images.freeimages.com/images/large-previews/37b/after-the-rain-1379585.jpg");
 }
 
 h1 {
-	padding: 40px;
-	font-variant-caps: small-caps;
+    font-family: 'Berkshire Swash', cursive;
+    padding: 40px;
     text-align: center; 
-	color: white;
-	font-size: 200%;
-	text-shadow: 2px 2px 6px black, 3px 3px 8px black;
-	}
+    color: white;
+    font-size: 200%;
+    text-shadow: 2px 2px 6px black, 3px 3px 8px black;
+    }
 
-h3 {
-	text-align: center;
-	color: #3A0B3F;
+h4 {
+    font-family: 'Berkshire Swash', cursive;
+    text-align: center;
+    color: #3A0B3F;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 p {
-	text-indent: 10px;
+    text-indent: 10px;
 }
 
 i {
-	color: green
+    color: green
     }
 
 #section {
-	background-color: #ffffff99;
-	margin: 30px;
-	border: none;
-	padding: 10px;
+    font-family: 'Montez', cursive;
+    font-size: 25px;
+    background-color: #ffffff99;
+    margin: 30px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-#fT {
-
-}
-    
 .danger {
-	color: red;
-	font-family: "Lucida Handwriting", "Brush Script MT", Papyrus, sans-serif;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 18px;
+    color: red;
 }
 
 .center {
-	text-align: center;
+    text-align: center;
 }
 
 ul {
     list-style-type : circle ;
 }
 
-ul>li:hover {
-	background-color: rgb(192, 249, 84);
+li > span:hover {
+    background-color: rgb(192, 249, 84);
 }
 
+li > p {
+    display: none;
+}
+
+.showP > p {
+    display: block;
+}
